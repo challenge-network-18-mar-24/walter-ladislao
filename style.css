@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(43, 43, 43);
+    margin-top: 0%;
+}
+
+h1,h2,h3,h4,h5{
+    color: rgb(255, 255, 255);
+    font-family: "Press Start 2P", system-ui; 
+    font-size: fit-content;
+}
+
+.myName{
+    font-size: 50px;
+}
+
+ .press-start{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+} 
+/* .play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+/* .press-start 2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+.myBody{
+    margin-inline: 10%;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+}
+.myBody1{
+    margin-inline: 10%; 
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.mySection{
+    margin-inline: 10%;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+/* PACMAN */
+
+.mypac{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+        
+}
+
+.path{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    animation: eating-path 2s linear infinite;
+}
+
+
+.path::before{
+    content: "";
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+    border-radius:50%;
+}
+
+@keyframes eating-path {
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform:translateX(-50%)
+    }
+}
+
+.pacman{
+    position:relative;
+    margin-right: 10px;
+    background: transparent;
+    z-index: 1;
+}
+
+.pacman::before, .pacman::after{
+    content: "";
+    position: absolute;
+    top: -35px;
+    display: block;
+    border-radius:50%;
+    height: 0px;
+    width: 0px;
+}
+
+.pacman::before{
+    animation: chunk-top 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+@keyframes chunk-top{
+    0%,100%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(-80deg);
+    }
+}
+
+.pacman::after{
+    animation: chunk-bot 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+@keyframes chunk-bot{
+    0%,100%{
+        transform: rotate(-40deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .myBody{
+        margin-inline: 0%;
+        justify-content: center;
+        height: 100px;
+    }
+    .mySection{
+        margin-inline: 0%;
+        justify-content: center;
+    }
+    .myBody1{
+        margin-inline: 0%; 
+        
+        
+    }
+
+    .myName{
+        font-size: 20px;
+        text-align: center;
+    }
+    .webdev{
+        font-size: 10px;
+    }
+}
