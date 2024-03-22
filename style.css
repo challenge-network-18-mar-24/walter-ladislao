@@ -1,33 +1,35 @@
 body{
     background-color: rgb(43, 43, 43);
-    margin-top: 0%;
+    margin: 0%;
+    padding: 0%;
 }
 
 h1,h2,h3,h4,h5{
     color: rgb(255, 255, 255);
     font-family: "Press Start 2P", system-ui; 
-    font-size: fit-content;
 }
 
 .myName{
     font-size: 50px;
 }
 
- .press-start{
+.press-start{
     font-family: "Press Start 2P", system-ui;
     font-size: 10px;
 } 
-/* .play-regular {
+
+.play-regular {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #fff;
 }
 
 .play-bold {
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-style: normal;
-} */
+} 
 
 /* .press-start 2p-regular {
     font-family: "Press Start 2P", system-ui;
@@ -35,17 +37,20 @@ h1,h2,h3,h4,h5{
     font-style: normal;
 } */
 
-.myBody{
+.mynav{
     margin-inline: 10%;
     background-color: black; 
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     justify-content: space-evenly;
-    height: 200px;
+    height: 100px;
     box-shadow:
-    0 0 60px 10px #fff,  /* inner white */
-    0 0 100px 20px #f0f, /* middle magenta */
-    0 0 140px 30px #0ff;
+    0 0 20px 5px #fff,  /* inner white */
+    0 0 50px 10px #f0f, /* middle magenta */
+    0 0 100px 15px #0ff;
 }
 .myBody1{
     margin-inline: 10%; 
@@ -56,9 +61,11 @@ h1,h2,h3,h4,h5{
 
 .mySection{
     margin-inline: 10%;
-    background-color: black; 
-    height: 100vh;
-    /* display: block; */
+    background-color: rgb(0, 0, 0); 
+    padding: 1%;
+}
+.myfooter{
+    background-color: rgb(0, 0, 0); 
     padding: 1%;
 }
 
@@ -87,7 +94,7 @@ h1,h2,h3,h4,h5{
     overflow: hidden;
     height: 100%;
     width: 100%;
-        
+    
 }
 
 .path{
@@ -167,7 +174,7 @@ h1,h2,h3,h4,h5{
         padding: 0%;
         margin: 0%;
     }
-    .myBody{
+    .mynav{
         display: flex;
         margin-inline: 0%;
         justify-content: center;
@@ -179,11 +186,9 @@ h1,h2,h3,h4,h5{
         justify-content: center;
     }
     .myBody1{
-        margin-inline: 0%; 
-        
-        
+        margin-inline: 10%;
     }
-
+    
     .myName{
         font-size: 20px;
         text-align: center;
@@ -192,9 +197,40 @@ h1,h2,h3,h4,h5{
         font-size: 10px;
     }
     .sectionTitle{
-        background-color: #0ff;
         padding: 1%;
         border: solid white ;
         font-size: 80%;
     }
+}
+
+.mymt{
+    margin-top: 1%;
+}
+
+.pfp {
+    background-image: url('https://picsum.photos/id/230/200/300');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+
+.boxes{
+    border: solid white;
+    padding: 1%;
+    width: 30%;
+}
+
+.boxesContainer{
+    padding: 1%;
+    border: solid white; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1% 1%;
+    margin-top: 1%;
+    flex-wrap: wrap;
+}
+.borderleft{
+    border-left: solid white;
 }
