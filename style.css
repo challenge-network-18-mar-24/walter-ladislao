@@ -208,7 +208,7 @@ h1,h2,h3,h4,h5{
 }
 
 .pfp {
-    background-image: url('https://picsum.photos/id/230/200/300');
+    background-image: url('./avatar.png');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
