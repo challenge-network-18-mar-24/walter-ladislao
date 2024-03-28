@@ -235,9 +235,9 @@
         0px 0px 4px #f0f, /* middle magenta */
         0px 0px 6px #0ff;
     }
-    .skill-card:hover{
+    /* .skill-card:hover{
         display: none;
-    }
+    } */
     .logo-box{
         width: 60%;
     }
