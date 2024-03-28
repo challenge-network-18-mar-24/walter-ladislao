@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
 .press-start{
     font-family: "Press Start 2P", system-ui;
     font-size: 10px;
@@ -15,6 +17,10 @@
     font-weight: 700;
     font-style: normal;
 } 
+
+.exo{
+    font-family: 'Exo 2', sans-serif;
+}
 
 .myName{
     font-size: 30px;
@@ -112,6 +118,73 @@
     height: 60px;
 }
 
+.title-skills{
+    height: 30%;
+}
+
+.skill-card{
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow:
+    inset 0 0 50px #ffffff8c,
+    inset 20px 0 80px rgba(255, 0, 255, 0.484),
+    inset -20px 0 80px rgba(0, 255, 255, 0.501),
+    inset 20px 0 300px rgba(255, 0, 255, 0.534),
+    inset -20px 0 300px rgba(0, 255, 255, 0.504),
+    0 0 50px #ffffff83,
+    -10px 0 80px rgba(255, 0, 255, 0.508),
+    10px 0 80px rgba(0, 255, 255, 0.507);
+}
+
+.skill-card:hover{
+    box-shadow:
+    inset 0 0 50px #fff,
+    inset 10px 0 80px #0ff,
+    inset 20px 0 80px #f0f,
+    inset 10px 0 80px #0ff,
+    inset 20px 0 80px #f0f,
+    0 0 50px #fff,
+    -10px 0 80px #0ff,
+    20px 0 80px #f0f;
+}
+
+.immagine-con-ombra {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* offsetX offsetY blurRadius spreadRadius color */
+}
+
+.skills{
+    font-size:90px;
+    font-weight: 600;
+    text-shadow:
+    0px 0px 10px #fff,  /* inner white */
+    0px 0px 30px #f0f, /* middle magenta */
+    0px 0px 50px #0ff;
+} 
+
+.sc-container{
+    height: 70%;
+}
+
+.neon_box{
+    padding: 20px;
+    border-radius: 20px;
+    padding-inline: 70px;
+    border: white solid;
+    box-shadow:
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff;
+}
+
+.logo-box{
+    width: 40%;
+    height: 300px;
+    transition: 0.5s;
+}
+.logo-box:hover{
+    width: 70%;
+}
+
 @media screen and (max-width: 1080px){
     .myName{
         font-size: 20px;
@@ -119,5 +192,31 @@
     .p-s1{
         line-height: 1;
         font-size: 20px;
+    }
+    .skills{
+        font-size:30px;
+        font-weight: 600;
+        text-shadow:
+        0px 0px 2cap #fff,  /* inner white */
+        0px 0px 4px #f0f, /* middle magenta */
+        0px 0px 6px #0ff;
+    } 
+    .neon_box{
+        padding: 20px;
+        border-radius: 15px;
+        padding-inline: 40px;
+        border: white solid;
+        box-shadow:
+        0px 0px 2cap #fff,  /* inner white */
+        0px 0px 4px #f0f, /* middle magenta */
+        0px 0px 6px #0ff;
+    }
+    .skill-card:hover{
+        display: none;
+    }
+    .logo-box{
+        width: 40%;
+        height: 150px;
+        transition: 0.5s;
     }
 }
