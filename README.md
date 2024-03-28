@@ -1,6 +1,6 @@
 Visita il sito https://challenge-network-18-mar-24.github.io/walter-ladislao/
 
--- R E S P O N S I V E --
+-- R E S P O N S I V E ✅--
 
 ##UTILITY:
 
